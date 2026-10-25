@@ -26,6 +26,7 @@
 Нужен установленный Docker Desktop.
 
 ```bash
+git clone https://github.com/Dyberezin/translator-app
 cd translator-app
 docker compose up --build -d
 ```
