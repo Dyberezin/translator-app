@@ -15,11 +15,9 @@ services:
       timeout: 5s
       retries: 10
 
-  # 2. Сервис перевода LibreTranslate
+  # 2. Сервис перевода 
   web-service:
-    image: libretranslate/libretranslate
-    environment:
-      LT_LOAD_ONLY: "en,ru,zh"
+    build: ./web-service
 
   # 3. Backend API
   backend:
